@@ -1,3 +1,16 @@
 body{
 background-color: #E8F1FF;
 }
+/* .txt-h1{
+  font-size: 65px;
+  line-height: 4.5rem;
+} */
+.cont-img{
+width: 50%;
+margin-left: 50px;
+}
+.image1{
+  width: 120%;
+  height: 100%;
+
+}
