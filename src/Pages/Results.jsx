@@ -67,13 +67,13 @@ const hospitals = {
 const HealthcareAccess = () => {
   return (
     <div className="min-h-screen bg-blue-50 p-4 md:p-8">
-      <Header />
+      {/* <Header /> */}
 
       <section className="mt-6">
         <h2 className="text-xl font-semibold text-blue-700 mb-4">
           Recommended Healthcare Centres
         </h2>
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {hospitals.recommended.map((hospital) => (
             <HospitalCard key={hospital.name} hospital={hospital} />
           ))}
@@ -84,7 +84,7 @@ const HealthcareAccess = () => {
         <h2 className="text-xl font-semibold text-blue-700 mb-4">
           Other Healthcare Centres
         </h2>
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {hospitals.other.map((hospital) => (
             <HospitalCard key={hospital.name} hospital={hospital} />
           ))}
