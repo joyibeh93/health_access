@@ -26,10 +26,27 @@ function About(props) {
       </section>
 
       {/* Our Services Section */}
-      <section>
+      <section className="mt-4 p-20">
         <h2 className="text-3xl font-bold mb-6">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-6 p-5">
+
           {/* Service Card */}
+          <div className="bg-white p-6 shadow-lg rounded-md">
+            <div className="h-40 bg-gray-300 mb-4"></div>
+            <h3 className="text-xl font-semibold">Borem ipsum</h3>
+          </div>
+
+          {/* Service Card */}
+          <div className="bg-white p-6 shadow-lg rounded-md">
+            <div className="h-40 bg-gray-300 mb-4"></div>
+            <h3 className="text-xl font-semibold">Porem ipsum</h3>
+          </div>
+
+          {/* Service Card */}
+          <div className="bg-white p-6 shadow-lg rounded-md">
+            <div className="h-40 bg-gray-300 mb-4"></div>
+            <h3 className="text-xl font-semibold">Vorem ipsum</h3>
+          </div>
           <div className="bg-white p-6 shadow-lg rounded-md">
             <div className="h-40 bg-gray-300 mb-4"></div>
             <h3 className="text-xl font-semibold">Borem ipsum</h3>
