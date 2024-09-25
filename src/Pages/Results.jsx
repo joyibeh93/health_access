@@ -66,7 +66,7 @@ const hospitals = {
 
 const HealthcareAccess = () => {
   return (
-    <div className="min-h-screen bg-blue-50 p-4 md:p-8">
+    <div className="min-h-screen bg-blue-50 p-4 md:p-8 flex flex-col ustify-center items-center">
       {/* <Header /> */}
 
       <section className="mt-6">
