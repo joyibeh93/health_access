@@ -2,6 +2,7 @@ import {} from 'react'
 import Header from '../component/Header'
 import Hero from '../component/Hero'
 import About from '../component/About'
+import Footer from '../component/Footer'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
     <Header />
     <Hero />
     <About />
+    <Footer />
     </>
   )
 }

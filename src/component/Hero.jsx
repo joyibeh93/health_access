@@ -1,6 +1,8 @@
 import {} from "react";
 import { useNavigate } from 'react-router-dom'
 import MaleDoctor from "../assets/MaleDoctor.png"
+import FemaleDoctor from "../assets/FemaleDoctor.png"
+
 
 function Hero() {
   const navigate = useNavigate();
@@ -47,15 +49,15 @@ function Hero() {
               <label className="text-[#252525c5] py-1">City</label>
               <input
                 type="text"
-                placeholder="Ikeja"
+                placeholder="Ikordou"
                 className="p-2 border border-gray-300 rounded-md"
               />
             </div>
             <div className="flex flex-col pt-2">
-              <label className="text-[#252525c5] py-1">HMO</label>
+              <label className="text-[#252525c5] py-1">Area</label>
               <input
                 type="text"
-                placeholder="Precious HMO"
+                placeholder="Ebutte"
                 className="p-2 border border-gray-300 rounded-md"
               />
             </div>
