@@ -1,8 +1,14 @@
 import {} from "react";
-import MaleDoctor from "../assets/MaleDoctor.png";
-import FemaleDoctor from "../assets/FemaleDoctor.png";
+import { useNavigate } from 'react-router-dom'
+import MaleDoctor from "../assets/MaleDoctor.png"
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/results');
+  };
+
   return (
     <>
       <section className="flex justify-between my-10 mx-10 p-20">
@@ -63,7 +69,7 @@ function Hero() {
             </div>
           </div>
           <div className="flex justify-center mt-10">
-            <button
+            <button onClick={handleButtonClick}
               type="submit"
               className="px-10 py-3 bg-[#1E5FC0] text-white rounded-full text-lg hover:bg-[#2448b3] border border-[#1E5FC0]"
             >
