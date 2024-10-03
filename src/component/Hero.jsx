@@ -13,10 +13,10 @@ function Hero() {
 
   return (
     <>
-      <section className="flex justify-between my-10 mx-10 p-20">
+      <section className="flex md:flex-wrap justify-between my-10 mx-10 p-20">
         <div className=" max-w-[900px] mb-5 px-10 w-1/2">
           <h1 className=" text-7xl w-[610px] leading-15 ">Welcome to Healthcare Access.</h1>
-          <p className="mt-7  text-3xl text-[#1E5FC0]">
+          <p className="mt-7  text-3xl md:text-sm text-[#1E5FC0]">
             Discover personalised healthcare access points nearby. Know your way around through our guide
           </p>
           <button className="mt-5 bg-[#1E5FC0] text-lg text-white py-2 px-5 rounded-full hover:bg-[#2448b3]">
@@ -31,7 +31,7 @@ function Hero() {
           />
         </div>
       </section>
-      <section className="flex justify-between my-0 mx-10 px-20">
+      <section className="flex md:flex-wrap justify-between my-0 mx-10 px-20">
         <form className="max-w-[900px] bg-white p-20 rounded-lg">
           <a href="/" className="text-[#2448b3] text-xl no-underline">
             Please turn on your location to get personalised recommendations.

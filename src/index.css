@@ -14,3 +14,11 @@ margin-left: 50px;
   height: 100%;
 
 }
+
+/* Responsive pages */
+@media screen and (max-width: 540px) {
+  .section-one{
+    display: flex;
+    flex-direction: column;
+  }
+}
