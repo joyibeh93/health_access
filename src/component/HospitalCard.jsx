@@ -1,9 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import hospitalImage from '../assets/hospitalImage.png'
 
 const HospitalCard = ({ hospital }) => {
+
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/hospital/${hospital.id}`);  // Navigate to the details page for the selected hospital
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 flex flex-col lg:flex-row space-y-2 w-full max-w-sm lg:max-w-lg hospital-card">
+    <div className="bg-white rounded-lg shadow-md p-4 flex flex-col lg:flex-row space-y-2 w-full max-w-sm lg:max-w-lg hospital-card"
+    onClick={handleCardClick}
+    >
       <div className='lg:w-1/3 w-full'>
       <img
         src={hospitalImage}

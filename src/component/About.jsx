@@ -7,7 +7,7 @@ function About(props) {
       {/* About Us Section */}
       <section className="mt-4 p-20">
       <h2 className="text-4xl font-bold mb-4">About Us</h2>
-        <div className="flex flex-row flex-wrap justify-between">
+        <div className="about-section flex flex-row flex-wrap justify-between">
           {/* Text section */}
             <p className="basis-1/2 text-2xl text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

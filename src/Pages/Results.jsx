@@ -6,6 +6,7 @@ import Header from '../component/Header';
 const hospitals = {
   recommended: [
     {
+      id: 1,
       name: 'Hospital A',
       address: '70 Pleasant Valley Street, Methuen MA 1844',
       phone: '+108093497609',
@@ -15,6 +16,7 @@ const hospitals = {
       image: 'hospital-image-url',
     },
     {
+      id: 2,
       name: 'Hospital B',
       address: '742 Main Street, North Oxford MA 1537',
       phone: '+600350042877',
@@ -24,6 +26,7 @@ const hospitals = {
       image: 'hospital-image-url',
     },
     {
+      id: 3,
       name: 'Hospital C',
       address: '1000 State Route 36, Hornell NY 14843',
       phone: '+287964864321',
@@ -33,6 +36,7 @@ const hospitals = {
       image: 'hospital-image-url',
     },
     {
+      id: 4,
       name: 'Hospital D',
       address: '58 Brooklawn Village Way, Danvers MA 1923',
       phone: '+425769178448',
@@ -44,6 +48,7 @@ const hospitals = {
   ],
   other: [
     {
+      id: 5,
       name: 'Hospital X',
       address: '279 Troy Road, East Greenbush NY 12061',
       phone: '+492431926059',
@@ -53,6 +58,7 @@ const hospitals = {
       image: 'hospital-image-url',
     },
     {
+      id: 6,
       name: 'Hospital Y',
       address: '425 Route 34, Macedon NY 14502',
       phone: '+509344018021',
@@ -66,16 +72,17 @@ const hospitals = {
 
 const HealthcareAccess = () => {
   return (
-    <div className="min-h-screen bg-blue-50 p-4 md:p-8 flex flex-col ustify-center items-center">
-      {/* <Header /> */}
-
-      <section className="mt-6">
+    <>
+    <Header />
+    <div className="min-h-screen max-w-screen-lg mx-auto bg-blue-50 p-4 md:p-8 flex flex-col justify-center items-center">
+      
+      <section className="mt-6 ">
         <h2 className="text-xl font-semibold text-blue-700 mb-4">
           Recommended Healthcare Centres
         </h2>
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {hospitals.recommended.map((hospital) => (
-            <HospitalCard key={hospital.name} hospital={hospital} />
+            <HospitalCard key={hospital.id} hospital={hospital} />
           ))}
         </div>
       </section>
@@ -86,13 +93,14 @@ const HealthcareAccess = () => {
         </h2>
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {hospitals.other.map((hospital) => (
-            <HospitalCard key={hospital.name} hospital={hospital} />
+            <HospitalCard key={hospital.id} hospital={hospital} />
           ))}
         </div>
       </section>
 
       <Footer />
     </div>
+    </>
   );
 };
 
